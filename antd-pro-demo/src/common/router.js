@@ -90,9 +90,7 @@ export const getRouterData = app => {
     },
 
     '/my-menu/menu1': {
-      component: dynamicWrapper(app, ['project', 'activities', 'chart'], () =>
-        import('../routes/MyMenu/Menu1')
-      ),
+      component: dynamicWrapper(app, ['menu1'], () => import('../routes/MyMenu/Menu1')),
     },
     '/my-menu/menu2': {
       component: dynamicWrapper(app, ['project', 'activities', 'chart'], () =>

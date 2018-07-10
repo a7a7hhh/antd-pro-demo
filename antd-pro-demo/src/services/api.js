@@ -8,6 +8,9 @@ export async function queryProjectNotice() {
 export async function queryActivities() {
   return request('/api/activities');
 }
+export async function queryMenulist() {
+  return request('/api/menulist');
+}
 
 export async function queryRule(params) {
   return request(`/api/rule?${stringify(params)}`);

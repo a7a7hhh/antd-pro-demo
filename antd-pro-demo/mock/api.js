@@ -288,9 +288,48 @@ export const getActivities = [
     template: '在 @{group} 新建项目 @{project}',
   },
 ];
+export const getMenulist = [
+  {
+    id: 'trend-1',
+    key: 'key1',
+    value: 'value1',
+    updatedAt: new Date(),
+  },
+  {
+    id: 'trend-2',
+    key: 'key2',
+    value: 'value2',
+    updatedAt: new Date(),
+  },
+  {
+    id: 'trend-3',
+    key: 'key3',
+    value: 'value3',
+    updatedAt: new Date(),
+  },
+  {
+    id: 'trend-4',
+    key: 'key4',
+    value: 'value4',
+    updatedAt: new Date(),
+  },
+  {
+    id: 'trend-5',
+    key: 'key5',
+    value: 'value5',
+    updatedAt: new Date(),
+  },
+  {
+    id: 'trend-6',
+    key: 'key6',
+    value: 'value6',
+    updatedAt: new Date(),
+  },
+];
 
 export default {
   getNotice,
   getActivities,
   getFakeList,
+  getMenulist,
 };
