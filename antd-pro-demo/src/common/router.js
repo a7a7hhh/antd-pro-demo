@@ -88,6 +88,22 @@ export const getRouterData = app => {
       // name: '工作台',
       // authority: 'admin',
     },
+
+    '/my-menu/menu1': {
+      component: dynamicWrapper(app, ['project', 'activities', 'chart'], () =>
+        import('../routes/MyMenu/Menu1')
+      ),
+    },
+    '/my-menu/menu2': {
+      component: dynamicWrapper(app, ['project', 'activities', 'chart'], () =>
+        import('../routes/MyMenu/Menu2')
+      ),
+    },
+    '/my-menu/menu3': {
+      component: dynamicWrapper(app, ['project', 'activities', 'chart'], () =>
+        import('../routes/MyMenu/Menu3')
+      ),
+    },
     '/form/basic-form': {
       component: dynamicWrapper(app, ['form'], () => import('../routes/Forms/BasicForm')),
     },

@@ -23,6 +23,27 @@ const menuData = [
     ],
   },
   {
+    name: '我的菜单',
+    icon: 'upload',
+    path: 'my-menu',
+    children: [
+      {
+        name: '子菜单1',
+        path: 'menu1',
+      },
+      {
+        name: '子菜单2',
+        path: 'menu2',
+      },
+      {
+        name: '子菜单3',
+        path: 'menu3',
+        // hideInBreadcrumb: true,
+        // hideInMenu: true,
+      },
+    ],
+  },
+  {
     name: '表单页',
     icon: 'form',
     path: 'form',
